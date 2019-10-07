@@ -49,4 +49,4 @@ function theGoodSolution3() {
     console.log(solutionTitle.innertext);
 }
 
-window.theGoodSolution3();
+//window.theGoodSolution3();
