@@ -1,0 +1,47 @@
+.body-styles--enabled {
+    background: #89e6ea;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 10vh 20vw;
+    border: 1em dashed yellow;
+
+
+    h1,h2 {
+        color: #962dd8;
+        margin-bottom: 1.5em;
+        font-size: 2.5rem;
+        
+        @media(max-width: 768px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    li.ice-cream-flavor {
+        list-style-type: none;
+        font-size: 2rem;
+        text-transform: capitalize;
+        padding: 0 0 .5em 0;
+        color: #f71487;
+        text-shadow: 0.03em 0.05em rgb(24, 193, 12);
+
+        &::before {
+            content: '🍦 ';
+            padding-right: .5em;
+        }
+    }
+
+    @media(max-width: 1024px) {
+        padding: 10vh 5vw;
+
+        h1,h2 {
+            font-size: 1.5rem;
+        }
+
+        li.ice-cream-flavor {
+            font-size: 1.5rem;
+        }
+
+    }
+
+}
