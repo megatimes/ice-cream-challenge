@@ -1,3 +1,28 @@
+
+footer {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    background: #f6faff;
+    padding: 1em;
+    border: 1px solid #deebfc;
+    font-family: sans-serif;
+    font-size: 16px;    
+
+    a {
+        color: #7ccafa;
+        display: inline-block;
+        margin: 0 .5em 0 1em;
+        text-underline-position: under;
+
+        &:hover,
+        &:active {
+            color: #ee74e4;
+        }
+    }
+}
+
+
 .body-styles--enabled {
     background: #89e6ea;
     font-family: sans-serif;
@@ -31,6 +56,20 @@
         }
     }
 
+    footer {
+        background: #b0e9eb;
+        border-color: #89d6da;
+    
+        a {
+            color: #19a6ea;
+
+            &:hover,
+            &:active {
+                color: #d65aaf;
+            }            
+        }
+    }    
+
     @media(max-width: 1024px) {
         padding: 10vh 5vw;
 
@@ -43,5 +82,5 @@
         }
 
     }
-
 }
+

@@ -1,4 +1,21 @@
 @charset "UTF-8";
+footer {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  background: #f6faff;
+  padding: 1em;
+  border: 1px solid #deebfc;
+  font-family: sans-serif;
+  font-size: 16px; }
+  footer a {
+    color: #7ccafa;
+    display: inline-block;
+    margin: 0 .5em 0 1em;
+    text-underline-position: under; }
+    footer a:hover, footer a:active {
+      color: #ee74e4; }
+
 .body-styles--enabled {
   background: #89e6ea;
   font-family: sans-serif;
@@ -23,6 +40,13 @@
     .body-styles--enabled li.ice-cream-flavor::before {
       content: '🍦 ';
       padding-right: .5em; }
+  .body-styles--enabled footer {
+    background: #b0e9eb;
+    border-color: #89d6da; }
+    .body-styles--enabled footer a {
+      color: #19a6ea; }
+      .body-styles--enabled footer a:hover, .body-styles--enabled footer a:active {
+        color: #d65aaf; }
   @media (max-width: 1024px) {
     .body-styles--enabled {
       padding: 10vh 5vw; }
