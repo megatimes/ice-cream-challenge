@@ -7,16 +7,15 @@ All solutions should run correctly without these.
 var stylesInfo = [
     'background: rgb(36, 83, 238);',
     'color: #ffffff',
-	'font-size: 16px',
-	'padding: .5em 5% .5em .5em',
+    'font-size: 16px',
+    'padding: .5em 5% .5em .5em',
 ].join(';');
 
 var stylesWarn = [
     'background: #d10707',
     'color: yellow',
-	'font-size: 16px',
+    'font-size: 16px',
     'padding: .5em 5% .5em .5em',
-
     'width: 30em',
 ].join(';');
 
