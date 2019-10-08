@@ -5,17 +5,16 @@ All solutions should run correctly without these.
 
 // set some styles for console logging
 var stylesInfo = [
-    'background: rgb(36, 83, 238);',
-    'color: #ffffff',
-    'font-size: 16px',
+    'color: #fff',
+    'font-size: 14px',
     'padding: .5em 5% .5em .5em',
 ].join(';');
 
 var stylesWarn = [
     'background: #d10707',
     'color: yellow',
-    'font-size: 16px',
-    'padding: .5em 5% .5em .5em',
+    'font-size: 12px',
+    'padding: .5em .5em .5em .5em',
     'width: 30em',
 ].join(';');
 
@@ -24,7 +23,17 @@ var stylesCode = [
     'background: #000000b6',
     'color: #13dffa',
     'font-family: monospace',
+    'font-size: 14px',
+    'padding: .25em .5em'
+].join(';');
+
+var stylesNetlify = [
+    'display: table-cell',
+    'background: #FFFFFF',
+    'color: #00ad9e',
+    'font-family: monospace',
     'font-size: 16px',
+    'font-weight: bold',
     'padding: .25em .5em'
 ].join(';');
 
@@ -32,15 +41,20 @@ var stylesCode = [
 
 // write the list of available functions to the console
 function theGoodSolutions() {
-    console.info('%c Available solution functions', window.stylesInfo);
-    console.info('%c (Reload page between solution calls)', window.stylesWarn+'font-size: 14px;');
-    console.group('Functions:')
+    console.log('%c You can also view this project on Netlify!', window.stylesNetlify);
+    console.log('%c https://megatimes-ice-cream-challenge.netlify.com/', window.stylesNetlify);
+    console.log('~~~');
+    
+    //console.info('%c Available solution functions', window.stylesInfo+';background: #2453ee');
+    var groupLabel = 'Available Function Names';
+    console.group(groupLabel);
     console.info('%ctheGoodSolution1()', window.stylesCode);
     console.info('%ctheGoodSolution2()', window.stylesCode);
     console.info('%ctheGoodSolution2(\'supportLegacy\')', window.stylesCode);
     console.info('%ctheGoodSolution3()', window.stylesCode);
     console.info('%ctheGoodSolution4()', window.stylesCode);
     console.groupEnd();
+    console.info('%c * You\'ll need to reload page between solution calls', window.stylesWarn);
 }
 window.theGoodSolutions();
 

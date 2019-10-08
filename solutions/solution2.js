@@ -8,7 +8,7 @@ function theGoodSolution2(supportLegacy) {
     // set header
     solutionTitle.innerHTML = 'Solution 2<br>Vanilla JS <code>for || forEach</code>';
     document.body.insertBefore(solutionTitle, flavorsList);
-    console.log(solutionTitle.innertext);
+    //console.log(solutionTitle.innertext);
 
     // create list items using one of two looping methods
     if (!useOldLoop) { 
@@ -19,7 +19,7 @@ function theGoodSolution2(supportLegacy) {
             flavorItem.innerHTML = flavor;
             flavorsList.appendChild(flavorItem);
         });
-        console.info('NO Legacy support. Used "forEach" method');
+        console.info('No Legacy support specified. Used "forEach" method');
         return;
     } else { 
         // old for loop method for legacy browses 

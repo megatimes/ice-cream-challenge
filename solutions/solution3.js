@@ -24,7 +24,7 @@ function theGoodSolution3() {
     for (let [flavorIndex, flavor] of Object.entries(flavorsObject)) {
         localStorage.setItem(flavorIndex, flavor);
     }
-    console.info(localStorage)
+    console.log(localStorage)
 
 
     // get local storage flavor values to create <li>s with decoded text
@@ -38,7 +38,7 @@ function theGoodSolution3() {
         flavorLi.setAttribute('data-flavor-key',flavorKey);
         flavorLi.setAttribute('data-flavor-value',flavorEncoded);
         flavorsUl.appendChild(flavorLi);
-        console.info(flavorLi);
+        console.dir(flavorLi);
     }
 
     // set page header
@@ -46,7 +46,7 @@ function theGoodSolution3() {
     solutionTitle.innerHTML = 'Solution 3<br>Super Convoluted Rube Goldberg Code Adventure';
     document.body.insertBefore(solutionTitle, flavorsUl);
     
-    console.log(solutionTitle.innertext);
+    console.log(solutionTitle.innerText);
 }
 
 //window.theGoodSolution3();
