@@ -44,6 +44,7 @@ function theGoodSolutions() {
     console.log('%c You can also view this project on Netlify!', window.stylesNetlify);
     console.log('%c https://megatimes-ice-cream-challenge.netlify.com/', window.stylesNetlify);
     console.log('~~~');
+    console.log('You look nice today');
     
     //console.info('%c Available solution functions', window.stylesInfo+';background: #2453ee');
     var groupLabel = 'Available Function Names';
