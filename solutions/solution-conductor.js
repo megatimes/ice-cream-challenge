@@ -47,7 +47,7 @@ window.theGoodSolutions();
 
 
 function solutionSwitcher() {
-    var functions = ['theGoodSolution1','theGoodSolution2', 'theGoodSolution3','theGoodSolution4'];
+    var functions = ['theGoodSolution1','theGoodSolution2', 'theGoodSolution3','theGoodSolution4', 'reset'];
     var footer = document.createElement('footer');
         
     footer.id = 'solution-switcher';
@@ -58,8 +58,14 @@ function solutionSwitcher() {
         var indexStepped = index + 1;
         link.innerHTML = 'solution ' + indexStepped;
         link.href = window.location.pathname + '#solution' + indexStepped;
+        link.setAttribute('data-solution', functionName);
         footer.append(link);
     });
+
+    // create a 'reset' link that doesn't include a hash solution
+    var lastLink = document.querySelector('[data-solution=reset]');
+    lastLink.innerHTML = 'reset';
+    lastLink.href = window.location.pathname;
     
     // force a reload when hash changes
     $('#solution-switcher a').click(function(el) {
