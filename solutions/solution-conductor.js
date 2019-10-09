@@ -1,7 +1,10 @@
 /* 
-Some helper functions for ice cream solutions.
-All solutions should run correctly without these.
+    Some helper functions for ice cream solutions.
+    All solutions should run correctly without these.
+    This is just for fun.
 */
+
+
 
 // set some styles for console logging
 var stylesInfo = [
@@ -41,10 +44,9 @@ var stylesNetlify = [
 
 // write the list of available functions to the console
 function theGoodSolutions() {
-    console.log('%c You can also view this project on Netlify!', window.stylesNetlify);
+    console.log('%c You can also view this project on Netlify:', window.stylesNetlify);
     console.log('%c https://megatimes-ice-cream-challenge.netlify.com/', window.stylesNetlify);
     console.log('~~~');
-    console.log('You look nice today');
     
     //console.info('%c Available solution functions', window.stylesInfo+';background: #2453ee');
     var groupLabel = 'Available Function Names';
@@ -60,6 +62,10 @@ function theGoodSolutions() {
 window.theGoodSolutions();
 
 
+
+
+
+// Create a section on the page that contians links to execute the solutions 
 function solutionSwitcher() {
     var functions = ['theGoodSolution1','theGoodSolution2', 'theGoodSolution3','theGoodSolution4', 'reset'];
     var footer = document.createElement('footer');
@@ -89,7 +95,9 @@ function solutionSwitcher() {
 }
 
 
+
 // if a solution is stated in the URL hash, run it on page load
+// example if URL fragment identifier is #solution2, then execute window.theGoodSolution2();
 function runSolutionFromUrlHash() {
     var hash,
         solutionHash,
@@ -104,6 +112,7 @@ function runSolutionFromUrlHash() {
         eval(theGoodSolution); // hello, eval
     }
 }
+
 
 
 $(document).ready(function() {
@@ -129,7 +138,7 @@ function theGoodSafetyCheck(solution) {
 
     if (typeof jQuery !== 'function') {
         console.warn('TG error: JQuery not loaded. Retrying');
-        // load jquery locally from /lib/jQuery file here
+        // load jquery locally from /lib/js/jquery-3.3.1.min.js
         return false;
     }
 
